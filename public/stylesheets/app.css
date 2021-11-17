@@ -1,0 +1,29 @@
+body {
+    margin-left: 50%;
+}
+
+.animated {
+    animation: loop 3s infinite cubic-bezier( .42, 0, .58, 1 );
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(-10px) translateY(-10px);
+    }
+
+    25% {
+        transform: translateX(10px) translateY(-10px);
+    }
+
+    50% {
+        transform: translateX(10px) translateY(10px);
+    }
+
+    75% {
+        transform: translateX(-10px) translateY(10px);
+    }
+
+    100% {
+        transform: translateX(-10px) translateY(-10px);
+    }
+}
